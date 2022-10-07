@@ -7,6 +7,15 @@
  * places to add some flare.
  */
 
+ :root{
+  --bg-color: orange;
+ 
+ }
+
+ .dark-mode {
+  --bg-color: black;
+ }
+
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
