@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
@@ -50,15 +50,15 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
-        {config.twitter && (
+        {config.instagram && (
           <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
+            className={styles.instagram}
+            href={`https://instagram.com/${config.instagram}`}
+            title={`instagram @${config.instagram}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         )}
 

@@ -183,4 +183,4 @@ See the [contribution guide](contributing.md) and join our amazing list of [cont
 
 MIT © [HWT](https://transitivebullsh.it)
 
-Support my open source work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
+Support my open source work by <a href="https://instagram.com/transitive_bs">following me on instagram <img src="https://storage.googleapis.com/saasify-assets/instagram-logo.svg" alt="instagram" height="24px" align="center"></a>
