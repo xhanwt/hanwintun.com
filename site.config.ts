@@ -18,7 +18,7 @@ export default siteConfig({
 
   // social usernames (optional)
   instagram: 'hanwtn',
-  github: 'hanwtn',
+  github: 'xhanwt',
   linkedin: 'hanwt',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
