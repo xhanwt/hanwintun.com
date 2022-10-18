@@ -70,7 +70,8 @@ const socialLinks: SocialLink[] = [
 ].filter(Boolean)
 
 export const PageSocial: React.FC = () => {
-  return (
+  return ( <div></div>)
+ /* return (
     <div className={styles.pageSocial}>
       {socialLinks.map((action) => (
         <a
@@ -90,4 +91,5 @@ export const PageSocial: React.FC = () => {
       ))}
     </div>
   )
+  */
 }

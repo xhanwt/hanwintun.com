@@ -4,13 +4,18 @@ import styles from './styles.module.css'
 
 export const GitHubShareButton: React.FC = () => {
   return (
+    <a> 
+     
+    </a>
+  )
+  /*return (
     <a
       href='https://github.com/transitive-bullshit/nextjs-notion-starter-kit'
       target='_blank'
       rel='noopener noreferrer'
       className={styles.githubCorner}
       aria-label='View source on GitHub'
-    >
+    > 
       <svg
         width='80'
         height='80'
@@ -42,7 +47,7 @@ export const GitHubShareButton: React.FC = () => {
           fill='currentColor'
           className={styles.octoBody}
         />
-      </svg>
+      </svg> 
     </a>
-  )
+  )*/
 }
