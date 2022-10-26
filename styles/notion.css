@@ -8,17 +8,19 @@
  */
 
  :root{
-  --bg-color: rgb(255, 255, 255);
- 
+  --bg-color: #f1eed8;
  }
 
  .dark-mode {
-  --bg-color: black;
+  --bg-color: #1A1C1A;
  }
 
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
+  background-image: linear-gradient(
+    var(--bg-color) 1%, var(--bg-color) 1%), url(https://images.unsplash.com/photo-1580243117731-a108c2953e2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NnxKa3pRUVk5eWhTVXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+  background-blend-mode: multiply;
 }
 
 .notion-page {

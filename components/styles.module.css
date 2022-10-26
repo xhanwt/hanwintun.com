@@ -1,7 +1,70 @@
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
+
+.loadingIcon {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+.loadingIcon:before, .loadingIcon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loadingIcon:before {
+  animation: before 2s infinite;
+}
+.loadingIcon:after {
+  animation: after 2s infinite;
+}
+
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em #D39D4A, -1em 0.5em #5C9099;
   }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em #D39D4A, 0 0.5em #5C9099;
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em #D39D4A, 1em 0.5em #5C9099;
+  }
+  100% {
+    box-shadow: 1em -0.5em #D39D4A, -1em 0.5em #5C9099;
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em #102935, -0.5em -1em #F94900;
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 #102935, -0.5em 0 #F94900;
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em #102935, -0.5em 1em #F94900;
+  }
+  100% {
+    box-shadow: 0.5em 1em #102935, -0.5em -1em #F94900;
+  }
+}
+/**
+ * Attempt to center the whole thing!
+ */
+
+.loadingIcon {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
 }
 
 .container {
@@ -21,14 +84,6 @@
   caret-color: rgb(55, 53, 47);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
     'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
-}
-
-.loadingIcon {
-  animation: spinner 0.6s linear infinite;
-  display: block;
-  width: 24px;
-  height: 24px;
-  color: rgba(55, 53, 47, 0.4);
 }
 
 .main {
