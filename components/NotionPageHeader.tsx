@@ -5,6 +5,7 @@ import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { Header, Breadcrumbs, Search, useNotionContext } from 'react-notion-x'
 import * as types from 'notion-types'
 
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useDarkMode } from 'lib/use-dark-mode'
 import { navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
 
@@ -27,7 +28,12 @@ const ToggleThemeButton = () => {
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
       onClick={onToggleTheme}
     >
-      {hasMounted && isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+      <DarkModeSwitch
+      style={{}}
+      checked={isDarkMode && hasMounted}
+      onChange={toggleDarkMode}
+      size={20}
+    />
     </div>
   )
 }
@@ -60,7 +66,7 @@ export const NotionPageHeader: React.FC<{
                     key={index}
                     className={cs(styles.navLink, 'breadcrumb', 'button')}
                   >
-                    {link.title}
+                    / {link.title}
                   </components.PageLink>
                 )
               } else {
