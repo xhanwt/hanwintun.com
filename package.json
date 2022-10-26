@@ -51,7 +51,6 @@
     "react-notion-x": "^6.12.7",
     "react-tweet-embed": "^2.0.0",
     "react-use": "^17.3.2",
-    "react-toggle-dark-mode": "^1.1.0",
     "rss": "^1.2.2"
   },
   "devDependencies": {
