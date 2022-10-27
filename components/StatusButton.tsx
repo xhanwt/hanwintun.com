@@ -13,7 +13,7 @@ export const StatusButton: React.FC = () => {
   const DISCORD_ID = "850409862792871966";
   const { data: activity } = useLanyard(DISCORD_ID);
 
-let acti = "I'm just chilling.";
+ let acti = "Doing nothing.";
   if(activity){
     let doing = "on ";
     
@@ -33,9 +33,13 @@ let acti = "I'm just chilling.";
       acti = doing + activity.activities[0].name + ".";
     if(activity.spotify){
       acti = "listening to " + activity.spotify.song + " by " + activity.spotify.artist + ".";
+    } 
+
     }
-    }
-  }
+    else {
+      acti = "" + activity.discord_status;
+      }
+  } 
 
 
   return (
