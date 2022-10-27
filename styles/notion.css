@@ -89,7 +89,7 @@
  
 }
 .notion-collection-card-body {
-border-top-style: solid;
+border-top: 2px solid;
 }
 
 .notion-gallery-grid .notion-property-text {
@@ -99,9 +99,9 @@ border-top-style: solid;
 
 .notion-collection-card {
   
-  border-radius: 4px; 
+  border-radius: 1px; 
   box-shadow: none;
-  border: 3px solid;
+  border: 2px solid;
 }
 
 .notion-collection-card-cover img {
