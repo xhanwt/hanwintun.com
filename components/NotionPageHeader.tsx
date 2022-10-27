@@ -1,10 +1,7 @@
 import * as React from 'react'
 import cs from 'classnames'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { Header, Breadcrumbs, Search, useNotionContext } from 'react-notion-x'
 import * as types from 'notion-types'
-
 
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useDarkMode } from 'lib/use-dark-mode'
@@ -44,16 +41,18 @@ export const NotionPageHeader: React.FC<{
 }> = ({ block }) => {
   const { components, mapPageUrl } = useNotionContext()
 
+
   if (navigationStyle === 'default') {
     return <Header block={block} />
   }
-
+  
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
 
         <div className='notion-nav-header-rhs breadcrumbs'>
+   
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {
@@ -83,7 +82,7 @@ export const NotionPageHeader: React.FC<{
               }
             })
             .filter(Boolean)}
-
+   
           <ToggleThemeButton />
 
           {isSearchEnabled && <Search block={block} title={null} />}

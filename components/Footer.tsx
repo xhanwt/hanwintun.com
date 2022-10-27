@@ -10,6 +10,8 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
+import { StatusButton } from './StatusButton'
+
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
@@ -35,6 +37,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>
 
       <div className={styles.settings}>
+        < StatusButton />
      {/*  {hasMounted && (
           <a
             className={styles.toggleDarkMode}

@@ -1,12 +1,47 @@
 import * as React from 'react'
-
+import { useState } from "react";
+import { useLanyard } from "use-lanyard";
 import styles from './styles.module.css'
 
-export const GitHubShareButton: React.FC = () => {
+import { useSpring, animated } from "react-spring";
+
+
+export const StatusButton: React.FC = () => {
+
+
+
+  const DISCORD_ID = "850409862792871966";
+  const { data: activity } = useLanyard(DISCORD_ID);
+
+let acti = "I'm just chilling.";
+  if(activity){
+    let doing = "on ";
+    
+    if(activity.activities[0]){
+      if(activity.activities[0].type == 0 && activity.activities[0].name != "Visual Studio Code"){
+        doing = "playing "
+      }
+      if(activity.activities[0].type == 1 && activity.activities[0].name != "Visual Studio Code"){
+        doing = "streaming on "
+      }
+      if(activity.activities[0].type == 2 && activity.activities[0].name != "Visual Studio Code"){
+        doing = "listening to "
+      }
+      if(activity.activities[0].type == 3 && activity.activities[0].name != "Visual Studio Code"){
+        doing = "watching "
+      }
+      acti = doing + activity.activities[0].name + ".";
+    if(activity.spotify){
+      acti = "listening to " + activity.spotify.song + " by " + activity.spotify.artist + ".";
+    }
+    }
+  }
+
+
   return (
-    <a> 
-     
-    </a>
+    <div>
+      Status: {JSON.stringify(acti, null, 2)}
+    </div>
   )
   /*return (
     <a
