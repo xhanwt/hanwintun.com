@@ -8,6 +8,7 @@ import { useDarkMode } from 'lib/use-dark-mode'
 import { navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
 
 import styles from './styles.module.css'
+import { StatusIcon } from './StatusIcon';
 
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -53,6 +54,8 @@ export const NotionPageHeader: React.FC<{
 
         <div className='notion-nav-header-rhs breadcrumbs'>
    
+<StatusIcon/>
+
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {

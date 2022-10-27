@@ -29,7 +29,7 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-import { StatusButton } from './StatusButton'
+import { StatusBar } from './StatusBar'
 
 import styles from './styles.module.css'
 

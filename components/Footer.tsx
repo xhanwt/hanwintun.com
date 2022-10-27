@@ -10,7 +10,7 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
-import { StatusButton } from './StatusButton'
+import { StatusBar } from './StatusBar'
 
 import styles from './styles.module.css'
 
@@ -37,7 +37,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>
 
       <div className={styles.settings}>
-        < StatusButton />
+        < StatusBar />
      {/*  {hasMounted && (
           <a
             className={styles.toggleDarkMode}

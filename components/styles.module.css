@@ -1,3 +1,32 @@
+.online{
+  background: green;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.offline{
+  background: gray;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.dnd{
+  background: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.idle{
+  background: orange;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+
 
 .loadingIcon {
   position: relative;

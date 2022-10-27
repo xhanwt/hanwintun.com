@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 import { useSpring, animated } from "react-spring";
 
 
-export const StatusButton: React.FC = () => {
+export const StatusBar: React.FC = () => {
 
 
 
