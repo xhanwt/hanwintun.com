@@ -79,7 +79,7 @@
 }
 
 
-.notion-column{
+.notion-callout .notion-column{
  display: flex;
  align-items: center;
 }
