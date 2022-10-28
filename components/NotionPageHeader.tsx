@@ -49,13 +49,15 @@ export const NotionPageHeader: React.FC<{
   
   return (
     <header className='notion-header'>
-      <div className='notion-nav-header'>
-        <Breadcrumbs block={block} rootOnly={true} />
 
+      <div className='notion-nav-header'>
+<div className = 'icon-and-status'>
+        <Breadcrumbs block={block} rootOnly={true} />
+       
+</div>
         <div className='notion-nav-header-rhs breadcrumbs'>
    
 <StatusIcon/>
-
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {
