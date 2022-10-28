@@ -62,7 +62,7 @@ color: var(background);
 }
 
 .notion-header .notion-nav-header {
-  max-width: 80%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
