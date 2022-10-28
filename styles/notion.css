@@ -22,11 +22,9 @@
     var(--bg-color) 1%, var(--bg-color) 1%), url(https://images.unsplash.com/photo-1580243117731-a108c2953e2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NnxKa3pRUVk5eWhTVXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
   background-blend-mode: multiply;
   */
-}
-
-.icon-and-status{
   text-align: center;
 }
+
 
 
 .notion-page {
@@ -78,6 +76,21 @@
 .notion-gallery-grid .notion-page-icon-inline {
   display: none;
   
+}
+
+.notion-callout-text{
+  font-size: 1em;
+  white-space: unset;
+  text-align: center;
+}
+
+.notion-page-link{
+  font-size: 1em;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: unset;
+  text-align: center;
 }
 
 .notion-gallery-grid .notion-page-title-text {
@@ -245,7 +258,7 @@ border-top: 2px solid;
   .notion-page-cover-wrapper,
   .notion-page-cover-wrapper span,
   .notion-page-cover-wrapper img {
-    border-radius: 0;
+    border-radius: 0%;
   }
 }
 
