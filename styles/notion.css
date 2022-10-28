@@ -99,7 +99,7 @@ color: var(background);
 display: none;
 }
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 1.5em;
+  font-size: 1em;
   white-space: unset;
   text-align: center;
 }
@@ -116,7 +116,7 @@ border-top: 2px solid;
 }
 
 .notion-gallery-grid .notion-property-text {
-  font-size: 10px;
+  font-size: 0.8em;
   
 }
 
