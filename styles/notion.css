@@ -79,12 +79,9 @@
 }
 
 
-.notion-callout .notion-column{
- display: flex;
- align-items: center;
-}
 
-.notion-page-link{
+
+.notion-callout .notion-page-link{
   font-size: 1em;
   width: 39%;
   margin-left: auto;
