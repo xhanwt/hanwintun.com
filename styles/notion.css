@@ -88,6 +88,26 @@ color: var(background);
 }
 
 
+.notion-yellow_background_co {
+  position: relative;
+  background-image: url(https://img.freepik.com/premium-photo/film-texture-overlay_173951-32.jpg) !important;
+  background-size: auto;
+ 
+  padding: 1rem 1rem;
+  float: left !important;
+}
+
+.notion-yellow_background_co  .notion-page-title-text{
+  color: rgb(255, 204, 162) !important;
+  font-weight: bold;
+  
+}
+
+.notion-yellow_background_co  .notion-callout-text{
+  color: rgb(255, 204, 162) !important;
+border-top: 1px white solid;
+border-bottom: 1px white solid;
+}
 
 .notion-callout .notion-page-link{
   font-size: 1em;
