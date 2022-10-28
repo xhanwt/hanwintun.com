@@ -71,7 +71,7 @@ color: var(background);
 }
 
 .notion-gallery-grid {
-  grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 4fr));
   grid-row-gap: 5vmin;
   grid-column-gap: 5vmin;
   margin-left: 3px;
@@ -199,6 +199,7 @@ border-top: 2px solid;
 }
 
 @media only screen and (max-width: 920px) {
+ 
   .index-page.notion-page {
     padding-left: 2vw;
     padding-right: 2vw;
