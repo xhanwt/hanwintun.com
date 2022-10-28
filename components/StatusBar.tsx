@@ -13,7 +13,7 @@ export const StatusBar: React.FC = () => {
   const DISCORD_ID = "850409862792871966";
   const { data: activity } = useLanyard(DISCORD_ID);
 
- let acti = "Doing nothing.";
+ let acti = " ";
   if(activity){
     let doing = "on ";
     
