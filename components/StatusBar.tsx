@@ -30,9 +30,9 @@ export const StatusBar: React.FC = () => {
       if(activity.activities[0].type == 3 && activity.activities[0].name != "Visual Studio Code"){
         doing = "watching "
       }
-      acti = doing + activity.activities[0].name + ".";
+      acti = doing + activity.activities[0].name;
     if(activity.spotify){
-      acti = "listening to " + activity.spotify.song + " by " + activity.spotify.artist + ".";
+      acti = "listening to " + activity.spotify.song + " by " + activity.spotify.artist;
     } 
 
     }
