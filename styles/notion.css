@@ -28,6 +28,9 @@
 .notion-page-content .notion-page-content-has-aside .notion-external-image{
 color: var(background);
 }
+.notion-page-content{
+  width: 100%;
+}
 
 .notion-row .notion-spacer{
   width: 10px;
