@@ -78,21 +78,24 @@
   
 }
 
-.notion-callout-text{
-  font-size: 1em;
-  white-space: unset;
-  text-align: center;
+
+.notion-column{
+ display: flex;
+ align-items: center;
 }
 
 .notion-page-link{
   font-size: 1em;
-  width: 20%;
+  width: 39%;
   margin-left: auto;
   margin-right: auto;
   white-space: unset;
   text-align: center;
+  display: block;
 }
-
+.notion-callout .notion-page-icon-inline{
+display: none;
+}
 .notion-gallery-grid .notion-page-title-text {
   font-size: 1.5em;
   white-space: unset;
