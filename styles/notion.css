@@ -7,8 +7,15 @@
  * places to add some flare.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
  :root{
-  --bg-color: #f4f3ed;
+  --bg-color: #F2f2f2;
  }
 
  .dark-mode {
@@ -30,6 +37,8 @@ color: var(background);
 }
 .notion-page-content{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .notion-row .notion-spacer{
@@ -96,6 +105,33 @@ color: var(background);
   padding: 1rem 1rem;
   float: left !important;
 }
+/*
+.notion-gray_background_co .notion-page-link {
+  position: relative;
+  transition: unset;
+  opacity: 1;
+  border-bottom-width: 0.1rem;
+  background: transparent;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 0 0.1rem;
+}
+
+.notion-gray_background_co .notion-page-link:focus,
+.notion-gray_background_co .notion-page-link:hover {
+  border-bottom-color: transparent;
+border: solid;
+  background-image: url(https://img.freepik.com/premium-photo/film-texture-overlay_173951-32.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.1rem;
+
+  transition-property: border, background-position, background-size;
+  transition-duration: 300ms;
+}
+
+*/
 
 .notion-yellow_background_co  .notion-page-title-text{
   color: rgb(255, 204, 162) !important;
@@ -127,6 +163,11 @@ display: none;
   text-align: center;
 }
 
+.notion-row {
+display: flex;
+justify-content: space-between;
+}
+
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
   text-overflow: unset;
@@ -134,6 +175,7 @@ display: none;
   margin-right: auto;
  
 }
+
 .notion-collection-card-body {
 border-top: 2px solid;
 }
@@ -155,9 +197,7 @@ border-top: 2px solid;
 }
 */
 
-.notion.notion-collection-card-body{
-
-  border-bottom-style: solid;
+.notion .notion-collection-card-body{
   text-align: center;
 }
 
@@ -215,6 +255,7 @@ border-top: 2px solid;
 
 .notion-callout {
   margin: 0.75em 0;
+  width: 100%;
 }
 
 .notion-hr {
@@ -291,10 +332,6 @@ border-top: 2px solid;
   }
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
-  justify-content: center;
-  padding: 2em;
-}
 
 .notion-code {
   background: rgba(249, 250, 251, 1);
