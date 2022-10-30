@@ -5,12 +5,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
-  optimizeFonts: false,
   images: {
     domains: [
       'www.notion.so',
       'notion.so',
       'images.unsplash.com',
+      'i.imgur.com',
       'pbs.twimg.com',
       'abs.twimg.com',
       's3.us-west-2.amazonaws.com',
