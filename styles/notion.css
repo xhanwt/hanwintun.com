@@ -7,12 +7,6 @@
  * places to add some flare.
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
  :root{
   --bg-color: #F2f2f2;
@@ -96,14 +90,6 @@ color: var(background);
   
 }
 
-.notion-row {
-  display: flex;
-  text-align: center;
-}
-
-.notion-row img{
-  display: inline-block !important;
-}
 
 .notion-yellow_background_co {
   position: relative;
@@ -272,7 +258,7 @@ border-top: 2px solid;
 
 @media only screen and (max-width: 920px) {
  
-  .index-page .notion-page {
+  .index-page.notion-page {
     padding-left: 2vw;
     padding-right: 2vw;
   }
@@ -320,7 +306,6 @@ border-top: 2px solid;
   padding: 0;
   min-height: 23px;
 }
-
 
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
@@ -434,19 +419,6 @@ border-top: 2px solid;
     #e7a8fc 85.29%,
     var(--bg-color)
   );
-}
-
-.notion-column {
-
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  grid-gap: 2px;
-  background: red;
-  align-content: left !important;
-}
-
-.notion-column img {
-  
 }
 
 .notion-teal_background {
