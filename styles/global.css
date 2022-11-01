@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap');
 
 
 * {
@@ -33,8 +34,9 @@ body {
     'Gruppo', cursive;
     'Newsreader', serif;
     'Comfortaa', cursive;
+    'Lora', serif;
     */
-  --notion-font: 'Comfortaa', cursive;
+  --notion-font: 'Lora', serif;
   font-family: var(--notion-font) !important;
   overflow-x: hidden;
   background-image: linear-gradient(
