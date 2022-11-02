@@ -23,14 +23,14 @@ const ToggleThemeButton = () => {
   }, [toggleDarkMode])
 
   return (
+    
     <div
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
-      onClick={onToggleTheme}
+ 
     >
       <DarkModeSwitch
-      style={{}}
       checked={isDarkMode && hasMounted}
-      onChange={toggleDarkMode}
+      onChange={onToggleTheme}
       size={20}
     />
     </div>
@@ -55,7 +55,7 @@ export const NotionPageHeader: React.FC<{
        
         <div className='notion-nav-header-rhs breadcrumbs'>
    
-<StatusIcon/>
+          <StatusIcon/>
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {
