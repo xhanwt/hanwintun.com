@@ -29,6 +29,13 @@
 .notion-page-content .notion-page-content-has-aside .notion-external-image{
 color: var(background);
 }
+
+.notion-block-55fe473ba84f4365bf45f394d06530a4 .notion-title{
+  background-color: red;
+  display: none;
+}
+
+
 .notion-page-content{
   width: 100%;
   display: flex;
