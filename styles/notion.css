@@ -310,12 +310,13 @@ border-top: 2px solid;
     padding-right: 2vw;
   }
 }
-
+/*
 @media only screen and (max-width: 600px) {
   .notion-search-button {
     display: none !important;
   }
 }
+*/
 
 .notion .notion-page-icon-cover {
   margin-left: auto;
