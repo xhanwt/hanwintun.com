@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.notion-search .searchInput {
+  color: var(--inverse-bg-color);
+}
+
 .notion-page-content .notion-page-content-has-aside .notion-external-image{
 color: var(background);
 }
