@@ -5,7 +5,7 @@
   height: 10px;
 }
 .online:hover::before {
-  content: " is available.";
+  content: ".";
   position: fixed;
   top: 18.5px;
   left: 45px;
@@ -18,7 +18,7 @@
   height: 10px;
 }
 .offline:hover::before {
-  content: " might be sleeping.";
+  content: "";
   position: fixed;
   top: 18.5px;
   left: 45px;
@@ -31,7 +31,7 @@
   height: 10px;
 }
 .dnd:hover::before {
-  content: " is focusing on something.";
+  content: "";
   position: fixed;
   top: 18.5px;
   left: 45px;
@@ -45,7 +45,7 @@
 }
 
 .idle:hover::before {
-  content: " is just chilling.";
+  content: "";
   position: fixed;
   top: 18.5px;
   left: 45px;
