@@ -4,6 +4,12 @@
   width: 10px;
   height: 10px;
 }
+.online:hover::before {
+  content: " is available.";
+  position: fixed;
+  top: 18.5px;
+  left: 45px;
+}
 
 .offline{
   background: gray;
@@ -11,12 +17,24 @@
   width: 10px;
   height: 10px;
 }
+.offline:hover::before {
+  content: " might be sleeping.";
+  position: fixed;
+  top: 18.5px;
+  left: 45px;
+}
 
 .dnd{
   background: red;
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+.dnd:hover::before {
+  content: " is focusing on something.";
+  position: fixed;
+  top: 18.5px;
+  left: 45px;
 }
 
 .idle{
@@ -26,7 +44,12 @@
   height: 10px;
 }
 
-
+.idle:hover::before {
+  content: " is just chilling.";
+  position: fixed;
+  top: 18.5px;
+  left: 45px;
+}
 
 .loadingIcon {
   position: relative;
