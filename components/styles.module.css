@@ -5,7 +5,7 @@
   height: 10px;
 }
 .online:hover::before {
-  content: ".";
+  content: " is available!";
   position: fixed;
   top: 18.5px;
   left: 45px;
@@ -18,7 +18,7 @@
   height: 10px;
 }
 .offline:hover::before {
-  content: "";
+  content: " is sleeping.";
   position: fixed;
   top: 18.5px;
   left: 45px;
@@ -31,13 +31,13 @@
   height: 10px;
 }
 .dnd:hover::before {
-  content: "";
+  content: " is very busy rn!";
   position: fixed;
   top: 18.5px;
   left: 45px;
 }
 
-.idle{
+.idle {
   background: orange;
   border-radius: 50%;
   width: 10px;
@@ -45,10 +45,25 @@
 }
 
 .idle:hover::before {
-  content: "";
+  content: " is chilling.";
   position: fixed;
   top: 18.5px;
   left: 45px;
+}
+
+@media only screen and (max-width: 450px) {
+  .idle:hover::before {
+    content: "";
+  }
+  .dnd:hover::before {
+    content: "";
+  }
+  .offline:hover::before {
+    content: "";
+  }
+  .online:hover::before {
+    content: "";
+  }
 }
 
 .loadingIcon {
