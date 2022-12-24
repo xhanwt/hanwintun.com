@@ -9,13 +9,13 @@
 
 
  :root{
-  --bg-color: #cec9bd;
+  --bg-color: #ffffff;
   --inverse-bg-color: #0d0e0e;
  }
 
  .dark-mode {
   --bg-color: #0d0e0e;
-  --inverse-bg-color: #cec9bd;
+  --inverse-bg-color: #ffffff;
  }
 
 .notion {
