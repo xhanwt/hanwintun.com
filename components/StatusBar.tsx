@@ -44,7 +44,7 @@ export const StatusBar: React.FC = () => {
 
   return (
     <div>
-      Status: {JSON.stringify(acti, null, 2)}
+      I'm {JSON.stringify(acti, null, 2)}
     </div>
   )
   /*return (

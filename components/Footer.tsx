@@ -34,10 +34,15 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>© 2022, {config.author}.</div>
-
+      
+      <div className={styles.copyright}>© 2022, {config.author}.
+     
+        </div>
+        
       <div className={styles.settings}>
+      <div className="status-footer">
         < StatusBar />
+        </div>
      {/*  {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -81,7 +86,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.github && (
+        {/* {config.github && (
           <a
             className={styles.github}
             href={`https://github.com/${config.github}`}
@@ -91,9 +96,10 @@ export const FooterImpl: React.FC = () => {
           >
             <FaGithub />
           </a>
-        )}
+        )} */}
+       
 
-        {config.linkedin && (
+    {/* {config.linkedin && (
           <a
             className={styles.linkedin}
             href={`https://www.linkedin.com/in/${config.linkedin}`}
@@ -103,7 +109,7 @@ export const FooterImpl: React.FC = () => {
           >
             <FaLinkedin />
           </a>
-        )}
+        )} */}
 
         {config.newsletter && (
           <a
@@ -129,6 +135,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
+     
     </footer>
   )
 }
