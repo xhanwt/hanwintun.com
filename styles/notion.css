@@ -187,10 +187,10 @@ display: none;
   text-align: center;
 }
 
-.notion-gallery-grid img {
+/* .notion-gallery-grid img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
+} */
 
 .notion-row {
 display: flex;
